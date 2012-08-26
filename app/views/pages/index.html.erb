@@ -1,0 +1,8 @@
+<% if current_user %>
+  Welcome <%= current_user.screen_name %> <%= current_user.twitter_name %>!
+  <%= link_to "Sign Out", signout_path %>
+<% else %>
+  <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+<% end %>
+ギークハウスゴミ出しBotジェネレーター<br>
+<%= link_to('つくる',bots_path) %>

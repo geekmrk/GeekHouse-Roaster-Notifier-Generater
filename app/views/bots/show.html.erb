@@ -1,0 +1,11 @@
+<%= current_user.screen_name %><br>
+<% unless @bot.try(:tweets) %>
+tweets nil dayo
+<% else %>
+aruyo
+<% end %>
+<% unless @bot.try(:members) %>
+members nil dayo
+<% else %>
+members aruyo
+<% end %>
